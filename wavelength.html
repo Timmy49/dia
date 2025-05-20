@@ -8,37 +8,46 @@
 </head>
 <body>
     <header>
-        <h1>Wavelength Game</h1>
+        <h1>Wavelength</h1>
     </header>
 
     <main>
-        <section class="game-options">
-            <h2>Join or Create a Game</h2>
-            <button id="create-game-btn">Create Game</button>
-            <button id="join-game-btn">Join Game</button>
+        <section class="game-info">
+            <h2>Current Round: <span id="round-number">1</span></h2>
+            <p>Victim's Turn: <span id="victim-name">Player 1</span></p>
+        </section>
 
-            <div id="game-code-container" style="display:none;">
-                <h3>Your Game Code: <span id="game-code"></span></h3>
-                <button id="start-game-btn">Start Game</button>
-            </div>
+        <section class="game-board">
+            <h2>Game Board</h2>
+            <p>Victim, ask a question!</p>
+            <textarea id="question" placeholder="What is your question?"></textarea>
+            <button id="submit-question" onclick="submitQuestion()">Submit Question</button>
             
-            <div id="join-container" style="display:none;">
-                <h3>Enter Game Code</h3>
-                <input type="text" id="game-code-input">
-                <button id="join-btn">Join Game</button>
-            </div>
+            <p class="answer-instruction">Players, choose a number between 1 and 10 for your answer!</p>
+            <div id="answers"></div>
+            
+            <button id="submit-answers" onclick="submitAnswers()">Submit Answers</button>
+        </section>
 
-            <div id="waiting-room">
-                <h3>Waiting Room</h3>
-                <div id="players-list"></div>
-            </div>
+        <section class="scoreboard">
+            <h2>Scores</h2>
+            <ul id="scoreboard">
+                <!-- Player Scores Will Appear Here -->
+            </ul>
+        </section>
+
+        <section class="game-result">
+            <h2>Results</h2>
+            <p id="victim-guess-result">Victim's Guess: </p>
+            <p id="score-update">Scores Updated!</p>
+            <button id="next-round" onclick="nextRound()">Next Round</button>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Wavelength Game</p>
+        <p>&copy; 2025 Game Hub</p>
     </footer>
 
-    <script src="js/game.js"></script>
+    <script src="js/wavelength.js"></script>
 </body>
 </html>

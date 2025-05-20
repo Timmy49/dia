@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wavelength Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Wavelength Game</h1>
+    </header>
 
+    <main>
+        <section class="game-options">
+            <h2>Join or Create a Game</h2>
+            <button id="create-game-btn">Create Game</button>
+            <button id="join-game-btn">Join Game</button>
+
+            <div id="game-code-container" style="display:none;">
+                <h3>Your Game Code: <span id="game-code"></span></h3>
+                <button id="start-game-btn">Start Game</button>
+            </div>
+            
+            <div id="join-container" style="display:none;">
+                <h3>Enter Game Code</h3>
+                <input type="text" id="game-code-input">
+                <button id="join-btn">Join Game</button>
+            </div>
+
+            <div id="waiting-room">
+                <h3>Waiting Room</h3>
+                <div id="players-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Wavelength Game</p>
+    </footer>
+
+    <script src="js/game.js"></script>
+</body>
+</html>

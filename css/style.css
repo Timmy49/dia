@@ -1,58 +1,76 @@
+/* General Page Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
-    color: #333;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #6a5acd;
     color: white;
     text-align: center;
     padding: 20px;
-}
-
-h1, h2, h3 {
-    margin: 10px 0;
 }
 
 main {
     padding: 20px;
 }
 
+h1, h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
 button {
-    padding: 10px;
-    margin: 10px;
-    background-color: #4CAF50;
+    background-color: #6a5acd;
     color: white;
     border: none;
+    padding: 10px 15px;
     cursor: pointer;
-    border-radius: 5px;
+    font-size: 1.2em;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #4b3e9c;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
+textarea {
     width: 100%;
-    bottom: 0;
-}
-
-#game-code-container, #join-container {
-    margin-top: 20px;
-}
-
-input[type="text"] {
+    height: 100px;
     padding: 10px;
-    margin: 10px;
-    width: 200px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Game Board */
+.game-board {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Scoreboard */
+.scoreboard ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.scoreboard li {
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+#next-round {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+#score-update {
+    font-weight: bold;
 }
